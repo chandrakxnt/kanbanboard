@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" 
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form id="task-form">
+      <div class="form-wrapper">
+        <input autocomplete="off" id="task-input" type="text" placeholder="Enter new task..." />
+        <button type="submit" id="submit">Add new Task </button>
+        <button id="save">Save</button>
+      </div>
+    </form>
+
+    <section class="task-wrapper">
+      <div class="tasklane" id="todolane">
+        <h3>To Do :</h3>
+      </div>
+      <div class="tasklane" id="doinglane">
+        <h3>Doing :</h3>
+      </div>
+      <div class="tasklane" id="donelane">
+        <h3>Done :</h3>
+      </div>
+    </section>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

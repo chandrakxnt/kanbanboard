@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-style: normal;
+    padding: 3rem;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;  
+}
+
+.form-wrapper input{
+    flex-basis:400px;
+    padding: 0.3rem;
+    border-radius: .5rem;
+    border: none;
+    cursor:text;
+    transition: transform .2s ease-in;
+}
+
+.form-wrapper #submit{
+    padding: 0.5rem;
+    border-radius: .3rem;
+    border: none;
+    flex-basis: 200px;
+    cursor: pointer;
+    transition: transform .3secs ease-in;
+}
+
+.form-wrapper #save{
+    flex-basis: 60px;
+    padding: 0.5rem;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    transition: transform .3secs ease-in;
+}
+
+.task-wrapper{
+    margin-block: 5rem;
+    color: white;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.task-wrapper h3{
+    font-size: 1.5rem;
+
+}
+
+.task-wrapper p{
+    font-size: .8rem;
+}
+
+.tasklane{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    min-height: 56vh;
+    border-radius: .5rem;
+    border: none;
+}
+
+.task{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin-block: 0.6rem;
+    border-radius: .3rem;
+    cursor: move;
+    transition: transform .2s ease-in;
+    display: flex;
+}
+
+.task .deleteTask{
+    color: white;
+    margin-right: 5px;
+    background-color: black;
+    border: solid 2px black;
+    font-size: 1.3rem;
+}
+
+.task .editTask{
+    color: white;
+    margin-right: 5px;
+    background-color: black;
+    border: solid 2px black;
+    font-size: 1.3rem;
+}
+
+p{
+    margin: 10px;
+    flex: auto;
+}
+
+.task .deleteTask:hover{
+    transform: scale(1.23);
+    color: #fff;
+}
+
+.task .editTask:hover{
+    transform: scale(1.23);
+    color: #fff;
+}
+
+.task:hover{
+   transform: scale(1.08);
+}
+
+.task.is-dragging{
+   transform:rotate(5deg);
+   opacity:.5;
+}
+
+.form-wrapper button:hover{
+transform: scale(1.06);
+}
+
+.form-wrapper input:hover{
+    transform: scale(1.06);
+}
